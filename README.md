@@ -1,7 +1,6 @@
 # Digit classification from hand signs using CNN
 ----------------------------------
-*  Dataset
-|         :     American Sign Language Dataset
+*  Dataset         :     American Sign Language Dataset
 *  Dataset link    :	https://www.kaggle.com/ayuraj/asl-dataset
 *  Dataset size    :	31MB
 *  \# of images    :	700 { each of size **400 x 400**, all **‘.jpeg’** RGB color space files }
