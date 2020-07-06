@@ -34,7 +34,7 @@
 ------------------------------------------------------------
 
 ### Model Summary:
-*         ![summary](./dataset/modelSummary.png)
+* ![summary](./dataset/modelSummary.png)
 
 
 ### Results:
@@ -45,5 +45,5 @@
 
 ### Conclusion:
 * The proposed model converged after 50 epochs with a total of 1,55,786 parameters all trainable.
-* I also built a complex model [{click here for the saved model}](https://drive.google.com/drive/u/1/folders/1--GzydCeMJYeCl1d5XRtCeVAB4anHSQy) with around 16 lac parameters, which converges to 100% accuracy only after 4 to 5 epochs.
+* I also built a complex model [click here for the saved model](https://drive.google.com/drive/u/1/folders/1--GzydCeMJYeCl1d5XRtCeVAB4anHSQy) with around 16 lac parameters, which converges to 100% accuracy only after 4 to 5 epochs.
 * But the proposed model in this repository is simple and robust enough, being state-of-the-art for the dataset, converging after about 50 epochs achieving 100% accuracy.
