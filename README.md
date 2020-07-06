@@ -34,7 +34,7 @@
 ------------------------------------------------------------
 
 ### Model Summary:
-* model_summary:![summary](./dataset/modelSummary.png)
+* ![summary](./dataset/modelSummary.png)
 
 
 ### Results:
