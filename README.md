@@ -18,6 +18,7 @@
 * Overall, achieved a training accuracy of 100% and testing accuracy of 100% for the input sizes 32x32 and above, after 50 epochs.
 
 ### Raw input from the dataset:
+* Sample images:
                     ![raw image samples](./dataset/rawAll.jpg)
 
 -----------------------------------------------------------
@@ -25,7 +26,7 @@
 
 * It can be observed that visual information like shape is predominant here, whereas chrominance information is of least importance.
 * So, the color images are converted to grayscale images for better classification performance of the model.
-      *              ![grayscale image samples](./dataset/grayscaleAll.jpg)
+                    ![grayscale image samples](./dataset/grayscaleAll.jpg)
 
 * Also performed Semantic Segmentation of the images using K-means clustering with K=2.
 * Observed that segmentation helped classification and achieved better results.
@@ -33,12 +34,14 @@
 ------------------------------------------------------------
 
 ### Model Summary:
-      *              ![summary](./dataset/modelSummary.png)
+* summary:
+                    ![summary](./dataset/modelSummary.png)
 ---------------------------------------
 
 ### Results:
-      *              ![result1](./dataset/r1.png)
-      *              ![result2](./dataset/r2.png)
+* results:
+                    ![result 1](./dataset/r1.png)
+                    ![result 2](./dataset/r2.png)
 ----------------------------------
 
 ### Conclusion:
