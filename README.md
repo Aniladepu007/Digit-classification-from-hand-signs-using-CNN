@@ -34,13 +34,10 @@
 ------------------------------------------------------------
 
 ### Model Summary:
-* summary:
 ![summary](./dataset/modelSummary.png)
 
----------------------------------------
 
 ### Results:
-* results:
 ![result 1](./dataset/r1.png)
 ![result 2](./dataset/r2.png)
 
