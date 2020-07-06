@@ -28,21 +28,19 @@
 * So, the color images are converted to grayscale images for better classification performance of the model.
                     ![grayscale image samples](./dataset/grayscaleAll.jpg)
 
-* Also performed Semantic Segmentation of the images using K-means clustering with K=2.
+* Also performed **Semantic Segmentation** of the images using K-means clustering with **K=2**.
 * Observed that segmentation helped classification and achieved better results.
                     ![segmented image samples](./dataset/masksAll.jpg)
 ------------------------------------------------------------
 
 ### Model Summary:
 * summary:
-
                     ![summary](./dataset/modelSummary.png)
 
 ---------------------------------------
 
 ### Results:
 * results:
-
                     ![result 1](./dataset/r1.png)
                     ![result 2](./dataset/r2.png)
 
