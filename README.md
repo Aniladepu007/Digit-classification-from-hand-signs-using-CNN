@@ -15,10 +15,10 @@
 
 --------------------------------------------------------------
 
-### Index Terms: { Convolution, Average pooling, segmentation using K-means clustering, ReLU & SeLU activations, Multi-class Classification }
+### Index Terms: { Convolution, Average pooling, segmentation using K-means clustering, ReLU & SELU activations, Multi-class Classification }
 -------------------------------------------------------------------
 ### Abstract:
-* Modeled a CNN with 3 convolution and average pooling layers, and a Fully Connected Layer followed by an output layer with SeLU activation.
+* Modeled a CNN with 3 convolution and average pooling layers with ReLU activation, and a Fully Connected Dense Layer followed by an output layer with SELU activation.
 * The input images from the dataset are of size 400 x 400.
 * All the input images are resized dynamically to 8x8, 16x16, 32x32, 64x64, 128x128 sizes running multiple trials with varying epochs.
 * Overall, achieved training and validation accuracies of 100% both and testing accuracy of 100% for the input sizes 64x64 and above, after 50 epochs and above.
