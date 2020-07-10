@@ -6,25 +6,30 @@
 | Dataset  | American Sign Language Dataset |
 | Dataset link | <https://www.kaggle.com/ayuraj/asl-dataset> |
 | Dataset size | 31MB |
-| \# of images | 700 { each of size **400 x 400**, all **‘.jpeg’** RGB color space files } |
-| Target Output | 1 out of 10 classes (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) |
-| Training set | **560** images |
+| \# of images | 700 { each of size **400 x 400**, all RGB color space **‘.jpeg’** files } |
+| Training set | **560** (had a further split for validation set- {split_size<sup>1</sup> = 0.1} ) |
+| training size | 504 |
+| validation size | 56 |
 | Testing set | **140** images (test_size = 0.2) |
+| Target Output | 1 out of 10 classes (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) |
 
 --------------------------------------------------------------
 
-### Index Terms: { Convolution, Average pooling, segmentation using K-means clustering, SeLU activation, Multi-class Classification }
+### Index Terms: { Convolution, Average pooling, segmentation using K-means clustering, ReLU & SeLU activations, Multi-class Classification }
 -------------------------------------------------------------------
 ### Abstract:
 * Modeled a CNN with 3 convolution and average pooling layers, and a Fully Connected Layer followed by an output layer with SeLU activation.
 * The input images from the dataset are of size 400 x 400.
-* Resized the input to 8x8, 16x16, 32x32, 64x64, 128x128 sizes running multiple trials with varying epochs.
-* Overall, achieved a training accuracy of 100% and testing accuracy of 100% for the input sizes 32x32 and above, after 50 epochs.
+* All the input images are resized dynamically to 8x8, 16x16, 32x32, 64x64, 128x128 sizes running multiple trials with varying epochs.
+* Overall, achieved training and validation accuracies of 100% both and testing accuracy of 100% for the input sizes 64x64 and above, after 50 epochs and above.
+* Segmented the input images using K-means clustering for better accuracies.
+
 
 ### Raw input from the dataset:
 * Sample images:
 ![raw image samples](./dataset/rawAll.jpg)
 
+* **1** All splits are made maintaining the class equality in each set(test, train, validation) so that the model would not be biased towards a specific class.
 -----------------------------------------------------------
 ### Pre-Processing:
 
@@ -34,6 +39,7 @@
 
 * Also performed **Semantic Segmentation** of the images using K-means clustering with **K=2**.
 * Observed that segmentation helped classification and achieved better results.
+* **The model with segmented input data outperformed the one with grayscale images as input.**
 ![segmented image samples](./dataset/masksAll.jpg)
 ------------------------------------------------------------
 
